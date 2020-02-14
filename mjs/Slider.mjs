@@ -18,11 +18,15 @@ export class Slider {
         for (let unSlide of this.list_slide){
             let elmSlide = document.createElement('div')
             let imgSlide = document.createElement('img')
+            let textSlide = document.createElement('p')
             elmSlide.id = 'slides-' + k
-            imgSlide.src = 'img/thurston' + k + '.jpg'
+            imgSlide.src = unSlide.img
+            textSlide.innerHTML = unSlide.titre
             k++
             elmSlides.appendChild(elmSlide)
             elmSlide.appendChild(imgSlide)
+            elmSlides.appendChild(textSlide)
+
         }
         elmSlider.appendChild(elmSlides)
         this.elmMonSlider.appendChild(elmSlider)
