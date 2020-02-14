@@ -23,6 +23,10 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+
+.textSlide{
+    position: absolute;
+}
     /*
 scroll-snap-points-x: repeat(300px);
 scroll-snap-type: mandatory;

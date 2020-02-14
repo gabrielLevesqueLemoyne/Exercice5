@@ -22,11 +22,11 @@ export class Slider {
             elmSlide.id = 'slides-' + k
             imgSlide.src = unSlide.img
             textSlide.innerHTML = unSlide.titre
+            textSlide.className = 'textSlide'
             k++
             elmSlides.appendChild(elmSlide)
             elmSlide.appendChild(imgSlide)
-            elmSlides.appendChild(textSlide)
-
+            elmSlide.appendChild(textSlide)
         }
         elmSlider.appendChild(elmSlides)
         this.elmMonSlider.appendChild(elmSlider)
